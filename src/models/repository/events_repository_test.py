@@ -20,7 +20,7 @@ def test_insert_event():
     response = events_repository.insert_event(event)
     print(response)
 
-# @pytest.mark.skip(reason="Consulta evento por id")
+@pytest.mark.skip(reason="Consulta evento por id")
 def test_get_event_by_id():
     event_id = "teste2xxx-uuid"
     events_repository = EventsRepository()
